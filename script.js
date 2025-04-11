@@ -17,7 +17,7 @@ async function sendMessage() {
   input.value = "";
 
   try {
-    const res = await fetch("https://taau-p778.onrender.com", {
+    const res = await fetch("https://taau-p778.onrender.com/generate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message }),

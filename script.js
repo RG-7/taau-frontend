@@ -20,7 +20,7 @@ async function sendMessage() {
     const res = await fetch("https://taau-p778.onrender.com/generate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message }),
+      body: JSON.stringify({ prompt: message }),
     });
 
     const data = await res.json();
